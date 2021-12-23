@@ -1,0 +1,20 @@
+node('workers'){
+ try {
+ stage('Checkout'){
+ checkout scm
+ }
+ stage('Build'){
+ echo "NOW"
+ }
+ stage('Push'){
+ echo "Storing now"
+ }
+ stage('Deploy'){
+ echo "now artifact"
+ }
+ } catch(err){
+ echo "Handling now"
+ } finally{
+ echo "nowww cleaning"
+ }
+}
