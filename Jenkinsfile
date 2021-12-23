@@ -4,13 +4,13 @@ node(){
  checkout scm
  }
  stage('Build'){
- echo "Building artifact"
+ echo "NOW artifact"
  }
  stage('Push'){
- echo "Storing artifact"
+ echo "NOW artifact"
  }
  stage('Deploy'){
- echo "Deploying artifact"
+ echo "NOW artifact"
  }
  } catch(err){
  echo "Handling errors"
